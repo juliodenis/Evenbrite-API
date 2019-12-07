@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Header from './components/Header';
+import CategoriasProvider from './context/CategoriasConntext';
+
 
 function App() {
   return (
-    <div >
-      <h1> Hello </h1>
-    </div>
+    <CategoriasProvider>
+      <Header/>
+      <h1>Hola</h1>
+
+    </CategoriasProvider>
   );
 }
 
